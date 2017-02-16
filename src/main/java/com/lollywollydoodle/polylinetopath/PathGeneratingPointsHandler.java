@@ -29,6 +29,7 @@ public class PathGeneratingPointsHandler extends DefaultPointsHandler {
 	@Override
 	public void endPoints() throws ParseException {
 		this.pathD.append("Z");
+		this.pathD.trimToSize();
     }
 	
 	public CharSequence getPathData() {
